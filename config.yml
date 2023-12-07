@@ -1,0 +1,61 @@
+powershell: true
+version: latest
+use: '@autorest/powershell@3.0.509' #Replace with '@autorest/powershell@2.x' for autorest v2
+export-properties-for-dict: false
+subject-prefix: '-Mg'
+azure: false
+input-file: "https://raw.githubusercontent.com/timayabi2020/AutorestFiles/main/directorymanagement.yaml"
+output-folder: src\$(title)
+clear-output-folder: true
+use-internal-constructors: true
+use-datetimeoffset : true
+metadata:
+    authors: Microsoft Corporation
+    owners: Microsoft Corporation
+    companyName: Microsoft Corporation
+    description: 'Microsoft Graph PowerShell Cmdlets'
+    copyright: &copy; Microsoft Corporation. All rights reserved.
+    tags: Microsoft Office365 Graph PowerShell PSModule PSIncludes_Cmdlet
+    requireLicenseAcceptance: true
+    licenseUri: https://aka.ms/devservicesagreement
+    projectUri: https://github.com/microsoftgraph/msgraph-sdk-powershell
+    iconUri: https://raw.githubusercontent.com/microsoftgraph/g-raph/master/g-raph.png
+directive:
+  - no-inline:
+    - MicrosoftGraphSharepointIds
+    - MicrosoftGraphIdentitySet
+    - MicrosoftGraphItemReference
+    - MicrosoftGraphDirectoryObject
+    - MicrosoftGraphUser
+    - MicrosoftGraphDrive
+    - MicrosoftGraphListItem
+    - MicrosoftGraphPost
+    - MicrosoftGraphSectionGroup
+    - MicrosoftGraphTeam
+    - MicrosoftGraphRecipient
+    - MicrosoftGraphGroupPolicyCategory
+    - MicrosoftGraphPrinter
+    - MicrosoftGraphPrinterShare
+    - MicrosoftGraphGovernanceResource
+    - MicrosoftGraphGovernanceRoleAssignment
+    - MicrosoftGraphGovernanceRoleDefinition
+    - MicrosoftGraphWorkbookOperationError
+    - MicrosoftGraphParentLabelDetails
+    - MicrosoftGraphEdiscoveryTag
+    - MicrosoftGraphEdiscoverySourceCollection
+    - MicrosoftGraphContentType
+    - MicrosoftGraphColumnDefinition
+    - MicrosoftGraphGroupPolicyDefinition
+    - MicrosoftGraphGroupPolicyDefinitionValue
+    - MicrosoftGraphSynchronizationLinkedObjects
+    - MicrosoftGraphSecuritySecurity
+    - MicrosoftGraphTeamSummary
+    - MicrosoftGraphSecurityInformationProtection
+    - MicrosoftGraphSecurityInformationProtectionPolicySetting
+    - MicrosoftGraphSecuritySensitivityLabel
+    - MicrosoftGraphTaskViewpoint
+    - MicrosoftGraphSecurityEdiscoveryReviewTag
+    - MicrosoftGraphSecurityEdiscoverySearch
+    - MicrosoftGraphManagedTenantsManagementTemplateStep
+    - MicrosoftGraphPlannerTaskCreation
+    - MicrosoftGraphPlannerTeamsPublicationInfo
